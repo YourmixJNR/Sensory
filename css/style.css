@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --Background-color: #fff;
+    --Text-color: #000;
+    --Second-text-color: #FFE355;
+}
+
+/* Base style */
+
+* {
+    font-family: 'Tektur', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+}
+
+*::selection{
+    background: var(--Text-color);
+    color: var(--Background-color);
+}
+
+body {
+    font-size: 16px;
+	background-color: var(--Background-color);
+    color: var(--Text-color);
+}
+
+/*-- Header --*/
+
+.header {
+    padding: 2rem 10%;
+    border-bottom: 1px solid #979797;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu button a {
+    display: block;
+    font-size: 1rem;
+    padding: 1em;
+    background-color: var(--Text-color);
+    color: var(--Background-color);
+}
+
+.nav-menu button a:hover {
+    background-color: var(--Second-text-color);
+    color: var(--Text-color);
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin: 5px auto;
+    background-color: var(--Text-color);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.bar:nth-child(2) {
+    width: 20px;
+}
+
+/*-- Header ends --*/
+
+
+/* RESPONSIVENESS */
+
+
+@media(max-width:900px){
+    
+    .nav-menu {
+        position: fixed;
+        flex-direction: column;
+        left: -100%;
+        top: 13.1%;
+        width: 100%;
+        height: 20%;
+        background-color: var(--Background-color);
+        text-align: center;
+        transition: 0.5s;
+        border-bottom: 1px solid #979797;
+    }
+
+    .nav-menu {
+        padding: 3em 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+}
+
+@media(max-width:600px){
+
+    .navbar a img {
+        width: 80%;
+    }
+
+}

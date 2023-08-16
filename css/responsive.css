@@ -1,0 +1,55 @@
+/* 
+@media(max-width:900px){
+    
+    header label {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header .navbar-box {
+        position: absolute;
+        top: 100%; left: 0;
+        width: 100%;
+        background: red;
+        padding: 1rem 5rem;
+        padding-bottom: 1px;
+        border-top: .1rem solid rgba(0, 0, 0, .5);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+        z-index: 10;
+    }
+
+    header .navbar-box a {
+        color:var(--primary);
+    }
+
+    .navbar-box.open {
+        transform: scaleY(0);
+        opacity: 0;
+        transition: .2s linear;
+        }
+
+    .navbar-box.close {
+        transform: scaleY(0);
+        opacity: 0;
+        transition: .2s linear;
+        }
+
+    header .navbar-box a {
+        display: block;
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+
+    header input:checked ~ .navbar-box {
+        transform: scaleY(1);
+        opacity: 1;
+        transition: .2s linear;
+    }
+
+    header input:checked ~ label::before {
+        content: '\f00d';
+    }
+    
+} */

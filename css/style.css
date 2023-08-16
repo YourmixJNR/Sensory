@@ -40,6 +40,10 @@ body {
     align-items: center;
 }
 
+.light-dark-switch span svg {
+    height: 18px;
+}
+
 .nav-menu button a {
     display: block;
     font-size: 1rem;

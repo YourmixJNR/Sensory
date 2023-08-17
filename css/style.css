@@ -27,6 +27,35 @@ body {
     color: var(--Text-color);
 }
 
+/* DARK MODE */
+
+:root.dark-mode {
+    --Background-color: #000;
+    --Text-color: #fff;
+}
+
+.light-dark-switch button {
+    background: none;
+    cursor: pointer;
+}
+
+/* Hide the moon icon by default */
+#moon {
+    display: none;
+  }
+  
+  /* Show the moon icon when in dark mode */
+  .dark-mode #moon {
+    display: inline;
+  }
+  
+  /* Show the sun icon when in light mode */
+  .light-mode #sun {
+    display: inline;
+  }
+  
+
+
 /*-- Header --*/
 
 .header {

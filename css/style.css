@@ -46,20 +46,19 @@ body {
 
 #sun {
     display: none;
-  }
-  
-/* Show the moon icon when in dark mode */
-.dark-mode #sun {
-display: inline;
 }
 
-/* Show the sun icon when in light mode */
-.dark-mode #moon {
-display: none;
+.dark-mode {
+
+    #sun {
+        display: inline;
+    }
+
+    #moon {
+        display: none;
+    }
 }
-  
-
-
+ 
 /*-- Header --*/
 
 .header {

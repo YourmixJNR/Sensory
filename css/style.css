@@ -171,9 +171,15 @@ body {
     line-height: 1.5em;
 }
 
-.brtk-timdat {
+.second-txt-box .brtk-time {
+    margin-right: 1em;
+}
+
+.second-txt-box .brtk-time, .second-txt-box .brtk-date {
     font-size: .8rem;
 }
+
+/* Hero ends */
 
 /* RESPONSIVENESS */
 

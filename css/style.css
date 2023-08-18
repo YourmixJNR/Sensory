@@ -23,7 +23,7 @@
 
 /* Reuseable components */
 
-main {
+section {
     padding: 0 10%;
 }
 
@@ -180,6 +180,12 @@ body {
 }
 
 /* Hero ends */
+
+/* Footer starts */
+
+footer {
+    border-top: 1px solid #979797
+}
 
 /* RESPONSIVENESS */
 

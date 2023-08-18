@@ -133,6 +133,10 @@ body {
 
 /* Hero starts */
 
+main {
+    margin-bottom: 10em;
+}
+
 .hero-section .sec-container {
     display: flex;
     justify-content: space-between;
@@ -187,6 +191,22 @@ footer {
     border-top: 1px solid #979797
 }
 
+.footer-section .ft-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 0;
+}
+
+.ft-container .ft-privacy-terms-box {
+    display: flex;
+    gap: 5em;
+}
+
+.ft-privacy-terms-box span a {
+    color: var(--Text-color);
+}
+
 /* RESPONSIVENESS */
 
 @media(max-width:900px){
@@ -195,7 +215,7 @@ footer {
         padding: 2rem 5%;
     }
 
-    main {
+    section {
         padding: 0 5%;
     }
 
@@ -260,6 +280,10 @@ footer {
     .txt-box .first-txt-box p {
         width: 100%;
     }
+
+    .txt-box .second-txt-box {
+        margin-top: 3em;
+    }
     
 }
 
@@ -281,6 +305,10 @@ footer {
     .txt-box .first-txt-box p {
         width: 100%;
         font-size: .9rem;
+    }
+
+    .txt-box .second-txt-box {
+        margin-top: 2em;
     }
 
     .txt-box .second-txt-box h2 {

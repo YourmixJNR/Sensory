@@ -260,7 +260,6 @@ body {
 @media(max-width:600px){
 
     .sec-container .img-box img {
-        justify-content: center;
         width: 60%;
     }
 
@@ -275,6 +274,7 @@ body {
     
     .txt-box .first-txt-box p {
         width: 100%;
+        font-size: .9rem;
     }
 
     .txt-box .second-txt-box h2 {

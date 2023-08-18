@@ -284,10 +284,26 @@ footer {
     .txt-box .second-txt-box {
         margin-top: 3em;
     }
+
+    .footer-section .ft-container {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        line-height: 2em;
+    }
+
+    .ft-container .ft-privacy-terms-box {
+        text-align: center;
+        flex-direction: column;
+        gap: 0;
+    }
     
 }
 
 @media(max-width:600px){
+
+    main {
+        margin-bottom: 5em;
+    }
 
     .sec-container .img-box img {
         width: 60%;
@@ -313,6 +329,10 @@ footer {
 
     .txt-box .second-txt-box h2 {
         font-size: 1.8rem;
+    }
+
+    .footer-section .ft-container {
+        font-size: .9rem;
     }
 
 }

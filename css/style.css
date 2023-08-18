@@ -21,15 +21,15 @@
     color: var(--Background-color);
 }
 
+/* LIGHT / DARK MODE */
+
 body {
     font-size: 16px;
 	background-color: var(--Background-color);
     color: var(--Text-color);
 }
 
-/* DARK MODE */
-
-:root.dark-mode {
+.dark-mode {
     --Background-color: #000;
     --Text-color: #fff;
 }
@@ -39,20 +39,24 @@ body {
     cursor: pointer;
 }
 
-/* Hide the moon icon by default */
-#moon {
+.light-dark-switch svg {
+    color: var(--Text-color);
+    height: 18px;
+}
+
+#sun {
     display: none;
   }
   
-  /* Show the moon icon when in dark mode */
-  .dark-mode #moon {
-    display: inline;
-  }
-  
-  /* Show the sun icon when in light mode */
-  .light-mode #sun {
-    display: inline;
-  }
+/* Show the moon icon when in dark mode */
+.dark-mode #sun {
+display: inline;
+}
+
+/* Show the sun icon when in light mode */
+.dark-mode #moon {
+display: none;
+}
   
 
 
@@ -67,10 +71,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.light-dark-switch span svg {
-    height: 18px;
 }
 
 .nav-menu button a {
@@ -108,7 +108,6 @@ body {
 
 
 /* RESPONSIVENESS */
-
 
 @media(max-width:900px){
     

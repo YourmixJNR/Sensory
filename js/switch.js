@@ -19,3 +19,5 @@ switchButton.addEventListener("click", () => {
         localStorage.setItem("darkMode", "false");
     }
 });
+
+

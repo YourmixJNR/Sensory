@@ -68,7 +68,10 @@ body {
 /*-- Header --*/
 
 .header {
+    position: fixed;
+    width: 100%;
     padding: 2rem 10%;
+    background: var(--Background-color);
     border-bottom: 1px solid #979797;
 }
 
@@ -134,6 +137,7 @@ body {
 /* Hero starts */
 
 main {
+    padding-top: 7.4em;
     margin-bottom: 10em;
 }
 
@@ -210,6 +214,10 @@ footer {
 /* RESPONSIVENESS */
 
 @media(max-width:900px){
+
+    main {
+        padding-top: 5em;
+    }
 
     .header {
         padding: 2rem 5%;

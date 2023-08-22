@@ -1,0 +1,1 @@
+Sensory is a web application designed to provide users with real-time information about electricity conditions in their area. It offers a simple and intuitive interface for users to check whether there's light in their area.
